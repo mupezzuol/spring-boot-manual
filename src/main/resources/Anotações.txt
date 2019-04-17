@@ -1,0 +1,11 @@
+### Thymeleaf
+
+
+
+- É um Engine Template, serve para nós podemos ver nossas páginas no navegador, ele interpreta, faz toda a configuração necessária
+para nós não se preocuparmos em configurar a visualização das páginas etc...
+
+Obs: Devemos importar ele no POM para que o Spring Boot consiga entender através da "CONVENÇÃO" das nossas páginas, que ficam 
+na pasta 'templates'.
+
+
