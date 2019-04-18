@@ -14,7 +14,33 @@ public class Convidado {
     private String telefone;
     
     
-    //Getter' and Setter's
+    //Constructor's
+    public Convidado() {
+    	
+    }
+    
+    public Convidado(String nome, String email, String telefone) {
+		super();
+		this.nome = nome;
+		this.email = email;
+		this.telefone = telefone;
+	}
+    
+	public Convidado(Long id, String nome, String email, String telefone) {
+		super();
+		this.id = id;
+		this.nome = nome;
+		this.email = email;
+		this.telefone = telefone;
+	}
+
+	@Override
+	public String toString() {
+		return "Convidado [id=" + id + ", nome=" + nome + ", email=" + email + ", telefone=" + telefone + "]";
+	}
+
+
+	//Getter' and Setter's
     public Long getId() {
         return id;
     }
