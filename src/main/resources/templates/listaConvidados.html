@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!-- Uso esse 'xmlns:th' para utiliza ro thymeleaf em nosso projeto, chamar foreach, usar el etc... -->
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>ListaVIP</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+<div class="container">
+<div id="listaDeConvidados">
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>telefone</th>
+        </tr>
+        </thead>
+        
+		<!-- Usando Thymeleaf, fazemos um forEach normal, variavel 'convidado' recebe a lista 'convidados' que veio da Controller -->
+        <tr th:each="convidado : ${convidados}">
+            <td> <span th:text="${convidado.nome}"></span> </td>
+            <td> <span th:text="${convidado.email}"></span> </td>
+            <td> <span th:text="${convidado.telefone}"></span> </td>
+        </tr>
+    </table>
+</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

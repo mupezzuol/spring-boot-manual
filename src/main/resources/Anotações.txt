@@ -8,4 +8,6 @@ para nós não se preocuparmos em configurar a visualização das páginas etc..
 Obs: Devemos importar ele no POM para que o Spring Boot consiga entender através da "CONVENÇÃO" das nossas páginas, que ficam 
 na pasta 'templates'.
 
-
+* Como não estamos usando mais JSP, teremos que utilizar um outro starter do Spring Boot para que nossos templates possam capturar 
+os objetos que estamos enviando para estes e fazer com que a página fique dinâmica. É aqui que começamos a usar o Thymeleaf. 
+No pom.xml teremos mais uma dependência.
