@@ -7,24 +7,24 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import br.com.springboot.spring_boot_manual.model.Convidado;
-import br.com.springboot.spring_boot_manual.repository.ConvidadoRepository;
+import br.com.springboot.spring_boot_manual.service.ConvidadoService;
 
 @Controller
 public class ConvidadoController {
 	
 	@Autowired //Injeção Spring
-	private ConvidadoRepository convidadoRepository; 
+	private ConvidadoService convidadoService; //Classe de serviço, para separamos nosso Repository da nossa Controller
 	
 	@RequestMapping("listaConvidados")
 	public String listaConvidados(Model model){
-		Iterable<Convidado> convidados = convidadoRepository.findAll();
+		Iterable<Convidado> convidados = convidadoService.obterTodos();
 	    model.addAttribute("convidados", convidados);//Envio para página o atributo
 	    return "listaconvidados";
 	}
 	
 	@RequestMapping(value="salvar", method=RequestMethod.POST)
 	public String salvar(Convidado convidado) {
-		convidadoRepository.save(convidado);
+		convidadoService.salvar(convidado);
 		return "redirect:listaConvidados";
 	}
 	
