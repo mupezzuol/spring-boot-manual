@@ -1,6 +1,13 @@
+### application.properties OU application.yml
+
+- Devemos utilizar a convenção e ao escolher qual usar, devemos colocar na pasta 'src/main/resources' pois através da convenção
+o Spring já sabe que se tiver esse arquivo, ele irá ler e setar as configuração setadas nele.
+
+
+
+
+
 ### Thymeleaf
-
-
 
 - É um Engine Template, serve para nós podemos ver nossas páginas no navegador, ele interpreta, faz toda a configuração necessária
 para nós não se preocuparmos em configurar a visualização das páginas etc...
