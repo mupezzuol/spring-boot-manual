@@ -15,7 +15,6 @@ public class ConvidadoController {
 	@Autowired //Injeção Spring
 	private ConvidadoRepository convidadoRepository; 
 	
-	
 	@RequestMapping("listaConvidados")
 	public String listaConvidados(Model model){
 		Iterable<Convidado> convidados = convidadoRepository.findAll();

@@ -4,4 +4,3 @@ INSERT INTO convidado (id,email,nome,telefone) VALUES(2,"joao@hgmail.com","João
 INSERT INTO convidado (id,email,nome,telefone) VALUES(3,"gabriela@hgmail.com","Gabriella","1195237282");
 INSERT INTO convidado (id,email,nome,telefone) VALUES(4,"carolina@hgmail.com","Carolina","1224737282");
 INSERT INTO convidado (id,email,nome,telefone) VALUES(5,"raul@hgmail.com","Raul","14958737282");
-

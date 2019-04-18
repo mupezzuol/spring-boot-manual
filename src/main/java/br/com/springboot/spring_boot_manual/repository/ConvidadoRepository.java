@@ -9,5 +9,4 @@ import br.com.springboot.spring_boot_manual.model.Convidado;
 @Repository
 public interface ConvidadoRepository extends CrudRepository<Convidado, Long>{
 	
-	
 }
