@@ -20,8 +20,22 @@
 		    <groupId>org.springframework.boot</groupId>
 		    <artifactId>spring-boot-starter-web</artifactId>
 		    <version>2.1.4.RELEASE</version>
+		    <exclusions>
+				<!-- Excluindo o Container de servidor do Tomcat que vem dentro do starter-web -->
+				<exclusion>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-starter-tomcat</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
-		
+		<!-- HABILITO o Jetty como container de servidor -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-jetty</artifactId>
+			<version>2.1.4.RELEASE</version>
+		</dependency>
+
+
 		<!-- Dependencia Spring Boot - Data JPA-->
 		<dependency>
 		    <groupId>org.springframework.boot</groupId>
