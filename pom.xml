@@ -29,6 +29,13 @@
 		    <version>2.1.4.RELEASE</version>
 		</dependency>
 		
+		<!-- Dependencia Spring Boot DevTools - Ajuda com HOT Deploy etc...-->
+		<dependency>
+		    <groupId>org.springframework.boot</groupId>
+		    <artifactId>spring-boot-devtools</artifactId>
+		    <version>2.1.4.RELEASE</version>
+		</dependency>
+		
 		<!-- Dependencia MySQL -->
 		<dependency>
 			<groupId>mysql</groupId>
