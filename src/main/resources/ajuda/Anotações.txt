@@ -18,3 +18,23 @@ na pasta 'templates'.
 * Como não estamos usando mais JSP, teremos que utilizar um outro starter do Spring Boot para que nossos templates possam capturar 
 os objetos que estamos enviando para estes e fazer com que a página fique dinâmica. É aqui que começamos a usar o Thymeleaf. 
 No pom.xml teremos mais uma dependência.
+
+
+
+
+
+## SAÚDE DA APLICAÇÃO - SRPING BOOT ACTUATOR
+
+- Importamos no POM, e ao subir aplicação, ele cria alguns endpoints (pode ser acessado os nomes via site do spring),
+nesses endpoints é uma requisição URL e nela retorna o estado do nosso projeto.
+
+Exemplos de endpoint:
+
+health -> Mostra a saude da aplicação
+beans -> Mostrar os Beans gerenciados pelo Spring
+
+Modo de uso: http://localhost:9000/actuator/health
+
+Obs: Sempre usar o '/actuator' para acessar o HOME que ele nos trás oq podemos usar na aplicação
+
+

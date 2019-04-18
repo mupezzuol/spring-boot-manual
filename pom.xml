@@ -64,6 +64,13 @@
 		    <version>2.1.4.RELEASE</version>
 		</dependency>
 
+		<!-- Spring Actuator - Usamos algumas endpoints para saber a saúde da nossa aplicação -->
+		<dependency>
+		    <groupId>org.springframework.boot</groupId>
+		    <artifactId>spring-boot-starter-actuator</artifactId>
+		    <version>2.1.4.RELEASE</version>
+		</dependency>
+		
 		<!-- Dependencia Test -->
 		<dependency>
 		    <groupId>junit</groupId>
